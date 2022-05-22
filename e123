@@ -1213,7 +1213,7 @@ local ammoType = ""
 BuySectionAmmo:addDropdown("Ammo", {"9mm", "5.56", "12 Gauge", ".50", ".45 ACP", "5.7x28"}, function(valuex)
     ammoType = valuex
 end)
-BuySectionAmmo:addSlider("Ammo Amount", 1, 0, 200, function(v)
+BuySectionAmmo:addSlider("Ammo Amount", 1, 0, 10000, function(v)
     buyAmmoAmount = v
 end)
 BuySectionAmmo:addButton("Buy ammo", function()
